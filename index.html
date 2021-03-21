@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: "Gill Sans", sans-serif;;
+            padding: 12px;
+            background: darkblue;
+        }
+
+        .header {
+            padding: 20px;
+            text-align: center;
+            background-image: url("1.jpg");
+            text-shadow: 2px 2px 5px green;
+
+        }
+
+        .header h1 {
+            font-size: 50px;
+            color: blue;
+        }
+        .header p {
+            font-size: 20px;
+            color: dodgerblue;
+        }
+        .topbar {
+            overflow: auto;
+            background-color: cornflowerblue;
+            text-shadow: 2px 2px 5px green, 0 0 10px lightblue;
+            font-family: "Times New Roman";
+        }
+
+        .topbar a {
+            float: left;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: underline;
+            font-size: 25px
+
+        }
+
+
+        .topbar a:hover {
+            background-color: white;
+            color: pink;
+        }
+
+
+        .card {
+
+            padding: 20px;
+            margin-top: 20px;
+            background-image: url("BG1.png");
+
+        }
+
+        .card h2{
+            font-size: 30px;
+            font-weight: bold;
+            color: blue;
+            text-decoration: underline;
+            font-family: "Courier New";
+
+        }
+
+        .card p{
+            font-size: 20px;
+            font-weight: bold;
+            color: midnightblue;
+            text-indent: 20px;
+            font-family: Verdana
+
+
+        }
+
+
+
+
+        .column {
+            float: left;
+            width: 50%;
+            background-image: url("BG1.png")
+
+        }
+
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        ul {
+            list-style-type: square;
+            list-style-position: inside;
+            color: midnightblue;
+            font-size: 20px;
+            font-family: "Courier New";
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+
+
+        }
+
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+            background-image: url("1.jpg");
+        }
+        .footer h2{
+            font-size: 30px;
+            font-weight: bold;
+            color: blue;
+            text-decoration: underline;
+            font-family: "Courier New";
+
+        }
+
+
+        @media screen and (max-width: 800px) {
+            .column,  {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+
+        @media screen and (max-width: 400px) {
+            .topbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="header">
+    <h1>Welcome to my HomePage</h1>
+    <p>Learn more about Lam Sik Yuen</p>
+</div>
+
+<div class="topbar">
+    <a href="https://whttps://www.google.com/search?q=%E9%87%91%E5%9F%8E%E6%AD%A6&safe=strict&sxsrf=ALeKk01KTSkmxnG9QQOiyIcVRdIlbm4NGg:1616304160447&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi659Oa0sDvAhXKLqYKHSc2BB0Q_AUoAXoECAMQAw&biw=1920&bih=913#imgrc=XZnM7N_RnmnRzMww.google.com/search?q=%E9%87%91%E5%9F%8E%E6%AD%A6&safe=strict&sxsrf=ALeKk01KTSkmxnG9QQOiyIcVRdIlbm4NGg:1616304160447&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi659Oa0sDvAhXKLqYKHSc2BB0Q_AUoAXoECAMQAw&biw=1920&bih=913">More information</a>
+    <a href="https://www.google.com/search?q=CAT&safe=strict&sxsrf=ALeKk001j9ahg50eo4XRtf-nfsyPJDg9_Q:1616304267289&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiOjs3N0sDvAhWCwYsBHapzCmIQ_AUoAXoECAMQAw&biw=1920&bih=913">My pets</a>
+    <a href="https://www.google.com/search?q=HABITS&tbm=isch&ved=2ahUKEwiitbHV0sDvAhVI35QKHbndAF0Q2-cCegQIABAA&oq=HABITS&gs_lcp=CgNpbWcQAzICCAAyAggAMgQIABAeMgQIABAeMgQIABAeMgQIABAeMgQIABAeMgQIABAeMgQIABAeMgQIABAeOgQIIxAnOgUIABCxAzoICAAQsQMQgwFQ-gFYlhtg_htoAnAAeACAAUaIAfgCkgEBOJgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=m9hWYOL7JMi-0wS5u4PoBQ&bih=913&biw=1920&safe=strict">My habits</a>
+    <a href="https://www.google.com/search?q=FAMILT&tbm=isch&ved=2ahUKEwip3cHX0sDvAhUxNaYKHWDeBvgQ2-cCegQIABAA&oq=FAMILT&gs_lcp=CgNpbWcQAzIECAAQEzIECAAQEzIECAAQEzIECAAQEzIECAAQEzIECAAQEzIECAAQEzIECAAQEzIECAAQEzIECAAQEzoECCMQJzoCCAA6BQgAELEDUJ9iWJ9qYKdsaABwAHgAgAEziAGCApIBATaYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=oNhWYKmNBLHqmAXgvJvADw&bih=913&biw=1920&safe=strict#imgrc=Fcflyi08gRpdKM">My family</a>
+</div>
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <h2 >My picture(s)</h2>
+            <a href="https://www.google.com/search?q=%E9%87%91%E5%9F%8E%E6%AD%A6&safe=strict&sxsrf=ALeKk01KTSkmxnG9QQOiyIcVRdIlbm4NGg:1616304160447&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi659Oa0sDvAhXKLqYKHSc2BB0Q_AUoAXoECAMQAw&biw=1920&bih=913#imgrc=XZnM7N_RnmnRzM "  ><img src="JACKIE.jpg" alt="Jackie" usemap="#face1" width="400" height="400"></a>
+            <img src="JACKIE1.jpg" alt="Jackie" width="400" height="400">
+            <p>I am a handsome guy.&#x1F44D;Hope you like my photos &#x1F496</p>
+
+        </div>
+
+        <div class="card">
+            <h2>Introduction of Jackie</h2>
+            <p>Hello! Nice to meet you guys&#x1F60A;. My name is Lam Sik Yuen. You can call me Jackie. I live in Hong Kong. I am 20 years old and I am a year four student from Hong Kong Polytechnic University.  I like computer that why I chose computer related subject for my study&#x1F453;.  I love reading book &#x1F440; in my space time because it can improve my knowledge. My favourit singer is Terence Lam&#x1F4EF;. </p>
+
+        </div>
+
+
+
+    </div>
+        <div class="card">
+            <h2>Recent activies</h2>
+            <img src="book.jpg" alt="bookfair" width="280" height="300">
+            <img src="running.jpg" alt="run" width="280" height="300">
+            <img src="pro.jpg" alt="program" width="280" height="300">
+
+        </div>
+
+    <div class="card">
+        <h2>My favourite book lists:</h2>
+        <ul>
+            <li>To Kill a Mockingbird</li>
+            <li>The Great Gatsby</li>
+            <li>One Hundred Years of Solitude</li>
+            <li>A Passage to India</li>
+            <li>Invisible Man</li>
+            <li>DOut, Natsuo Kirino</li>
+            <li>The Decagon House Murders</li>
+            <li>The Devotion of Suspect X</li>
+            <li>Puppet Master</li>
+            <li>Killer</li>
+        </ul>
+
+        <p>I recommend to read the upon book because they are interesting.</p>
+        <p>&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;&#x1F60D;  </p>
+        <p>It is great that to you guys share your favourite books with me. </p>
+        <p>You can contact me by following ways.</p>
+        <p>&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;&#9742;</p>
+    </div>
+
+
+</div>
+
+<div class="footer">
+    <h2>Contacts</h2>
+    <ul>
+        <li>Instragam<a href="https://www.instagram.com/"><img src="iG.jpg" alt="1" width="30" height="30"></a> </li>
+        <li>Facebook<a href="https://zh-hk.facebook.com/"><img src="FB.png" alt="2" width="30" height="30"></a> </li>
+    </ul>
+    <ul>
+
+
+        <li>Twitter<a href="https://twitter.com/"><img src="TW.png" alt="3" width="30" height="30"></a> </li>
+        <li>WeChat<a href="https://wx.qq.com/wechat?lang=zh_TW"><img src="Wc.png" alt="4" width="30" height="30"></a> </li>
+    </ul>
+</div>
+
+</body>
+</html>
+
+
